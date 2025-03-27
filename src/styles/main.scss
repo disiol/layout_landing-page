@@ -1,6 +1,14 @@
 @import 'base/base';
 @import 'utils/variables';
 @import 'utils/mixins';
-@import "components/header";
-@import "components/main";
-@import "components/footer";
+@import 'components/header';
+@import 'components/menu';
+
+/*  TODO
+@import 'components/museum-info';
+ @import 'components/hours';
+ @import 'components/exhibitions';
+ @import 'components/contact';
+
+@import 'components/footer';
+ */

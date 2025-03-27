@@ -6,38 +6,171 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>The Met</title>
     <link
       rel="stylesheet"
-      href="./styles/main.scss"
+      href="styles/base"
     />
-    <script
-      src="scripts/main.js"
-      defer
-    ></script>
   </head>
   <body>
     <header class="header">
-      <div class="header__top"></div>
-      <h1>Welcome to The MET</h1>
+      <nav class="header__nav"></nav>
     </header>
-    <aside class="menu"></aside>
+
+    <aside
+      class="menu"
+      id="menu"
+    >
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a
+            href="#"
+            class="menu__link"
+          >
+            HOME
+          </a>
+        </li>
+        <li class="menu__item">
+          <a
+            href="#"
+            class="menu__link"
+          >
+            ABOUT US
+          </a>
+        </li>
+        <li class="menu__item">
+          <a
+            href="#"
+            class="menu__link"
+          >
+            NOW ON VIEW
+          </a>
+        </li>
+        <li class="menu__item">
+          <a
+            href="#"
+            class="menu__link"
+          >
+            EXPLORE ONLINE
+          </a>
+        </li>
+        <li class="menu__item">
+          <a
+            href="#"
+            class="menu__link"
+          >
+            CONTACTS
+          </a>
+        </li>
+      </ul>
+    </aside>
 
     <main class="main">
-      <section class="section-block1">
-        <h2 class="section-block__title">Museum hours</h2>
+      <section class="museum-info">
+        <h1 class="museum-info__title">THE MET FIFTH AVENUE</h1>
+        <p class="museum-info__phone">+1212-535-7710</p>
+        <h2 class="museum-info__title">THE MET CLOISTERS</h2>
+        <p class="museum-info__phone">+1212-923-3700</p>
       </section>
-      <section class="section-block2">
-        <h2 class="section-block__title">Museum hours</h2>
+
+      <section class="hours">
+        <h2 class="hours__title">MUSEUM HOURS</h2>
+        <div class="hours__location">
+          <h3 class="hours__location-title">THE MET FIFTH AVENUE</h3>
+          <p class="hours__time">10 AM-5PM — SUN, MON, TUE, THU</p>
+          <p class="hours__time">10 AM-9 PM — FRI, SAT</p>
+          <p class="hours__closed">CLOSED — WED</p>
+          <p class="hours__closed">
+            CLOSED ON THANKSGIVING DAY, DEC 25, JAN 1, AND THE FIRST MONDAY IN
+            MAY.
+          </p>
+        </div>
+
+        <div class="hours__location">
+          <h3 class="hours__location-title">THE MET CLOISTERS</h3>
+          <p class="hours__time">10 AM—4.30 PM — THU-TUE</p>
+          <p class="hours__closed">CLOSED — WED</p>
+          <p class="hours__closed">CLOSED ON THANKSGIVING DAY, DEC 25, JAN 1</p>
+        </div>
       </section>
-      <section class="section-block3">
-        <h2 class="section-block__title">Museum hours</h2>
+
+      <section class="exhibitions">
+        <h2 class="exhibitions__title">NOW ON VIEW</h2>
+        <div class="exhibitions__item">
+          <h3 class="exhibitions__item-title">A New Look at Old Masters</h3>
+          <p class="exhibitions__date">
+            DECEMBER 12, 2020 — THROUGH SPRING 2023
+          </p>
+        </div>
+        <div class="exhibitions__item">
+          <h3 class="exhibitions__item-title">The Collection of</h3>
+          <p class="exhibitions__date">MARCH 27, 2021 — OCTOBER 30, 2022</p>
+        </div>
+        <div class="exhibitions__item">
+          <h3 class="exhibitions__item-title">More to Explore</h3>
+          <p class="exhibitions__date">DECEMBER 10, 2021 — MARCH 6, 2022</p>
+        </div>
       </section>
-      <section class="section-block4">
-        <h2 class="section-block__title">Museum hours</h2>
+
+      <section class="contact">
+        <h2 class="contact__title">CONTACT US</h2>
+        <div class="contact__info">
+          <h3 class="contact__info-title">THE MET FIFTH AVENUE</h3>
+          <p class="contact__phone">+1 212-535-7710</p>
+          <p class="contact__address">1000 FIFTH AVENUE, NEW YORK, NY 10028</p>
+        </div>
+        <div class="contact__info">
+          <h3 class="contact__info-title">THE MET CLOISTERS</h3>
+          <p class="contact__phone">+1 212-923-3700</p>
+          <p class="contact__address">
+            99 MARGARET CORBIN DRIVE, FORT TRYON PARK, NEW YORK, NY 10040
+          </p>
+        </div>
+        <form class="contact__form">
+          <label
+            for="name"
+            class="contact__label"
+          >
+            NAME
+          </label>
+          <input
+            type="text"
+            id="name"
+            class="contact__input"
+          />
+          <label
+            for="email"
+            class="contact__label"
+          >
+            EMAIL
+          </label>
+          <input
+            type="email"
+            id="email"
+            class="contact__input"
+          />
+          <label
+            for="message"
+            class="contact__label"
+          >
+            MESSAGE
+          </label>
+          <textarea
+            id="message"
+            class="contact__textarea"
+          ></textarea>
+          <button
+            type="submit"
+            class="contact__button"
+          >
+            SEND
+          </button>
+        </form>
       </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <p class="footer__text">&copy; 2023 The Met. All rights reserved.</p>
+    </footer>
   </body>
 </html>
