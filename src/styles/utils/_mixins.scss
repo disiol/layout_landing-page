@@ -1,4 +1,10 @@
-//  Mixin for media queries
+// Міксини
+@mixin grid-layout($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr); // Створює $columns колонок
+  gap: 20px; // Відстань між елементами
+}
+
 @mixin respond-to($breakpoint) {
   @if $breakpoint == 'phone' {
     @media (min-width: 320px) {
@@ -13,4 +19,19 @@
       @content;
     }
   }
+}
+
+@mixin header-style {
+  /* image 3 */
+
+  position: absolute;
+  height: $header-height;
+  width: $header-width;
+  background: $header-background-image no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
 }

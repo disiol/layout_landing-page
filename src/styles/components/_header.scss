@@ -1,6 +1,40 @@
-// TODO
-.header{
-  &__header__contacts{
-    display: none;
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.header {
+  grid-column: 1 / -1; // Заголовок займає всю ширину
+
+  @include header-style; // Використання міксину для стилю заголовка
+
+  .header__nav {
+    display: flex;
+    align-items: center;
+
+    @include respond-to('tablet') {
+      flex-direction: column; // Зміна напрямку на планшетах
+    }
+  }
+
+  .header__logo {
+    font-size: 24px;
+    font-weight: bold;
+
+    @include respond-to('tablet') {
+      font-size: 30px; // Збільшення шрифту на планшетах
+    }
+
+    @include respond-to('desktop') {
+      font-size: 36px; // Ще більше на десктопах
+    }
+  }
+
+  .header__contacts {
+    margin-left: 20px; // Відступ між логотипом і контактами
+  }
+
+  .header__contacts-icon,
+  .header__burger-menu {
+    width: 24px; // Приклад ширини для іконок
+    margin-left: 10px; // Відступ між іконками
   }
 }
