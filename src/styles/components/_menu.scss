@@ -4,10 +4,16 @@
 
   /* Menu (320) */
 
+
+}
+
+.menu--open {
   position: relative;
+  display: block; /* Відобразити меню, коли клас активний */
   width: 744px;
   height: 842px;
-
+  top: 0; /* Вирівняти по верху */
+  right: 0; /* Вирівняти по правому краю */
   background: #D12D35;
-
+  z-index: 1000; /* Задати порядок відображення */
 }

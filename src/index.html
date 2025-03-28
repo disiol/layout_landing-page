@@ -11,11 +11,19 @@
       rel="stylesheet"
       href="styles/main.scss"
     />
+    <script
+      src="scripts/main.js"
+      defer
+    ></script>
   </head>
   <body class="body">
     <header class="header">
       <nav class="header__nav">
-        <div class="header__logo">THE MET</div>
+        <img
+          class="header__logo"
+          alt="THE MET logo"
+          src="images/icons/header/logo-the-met.png"
+        />
 
         <div class="header__contacts">
           <p class="header__info">
@@ -31,17 +39,17 @@
         </div>
 
         <img
-          src="/src/images/Icons/heder/Icon-phone-call.png"
+          src="/src/images/icons/header/Icon-phone-call.png"
           alt="contacts icon"
           class="header__contacts-icon"
           id="header__contacts-icon-menu-toggle"
         />
         <img
-          src="/src/images/Icons/menu/Icon-burger-menu.png"
+          src="/src/images/icons/menu/Icon-burger-menu.png"
           alt="burger menu"
           class="header__burger-menu"
           id="header__burger-menu-toggle"
-        >
+        />
       </nav>
     </header>
 
@@ -49,12 +57,13 @@
       class="menu"
       id="menu"
     >
-      <button
+      <img
+        src="/src/images/icons/menu/Icon-close.png"
+        alt="close menu"
         class="menu__close"
         id="menu-close"
-      >
-        &times;
-      </button>
+      />
+
       <ul class="menu__list">
         <li class="menu__item">
           <a
