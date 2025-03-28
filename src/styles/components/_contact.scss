@@ -1,0 +1,19 @@
+// TODO
+
+.contact {
+  &__title {
+    @extend %section-title;
+  }
+
+  &__phone {
+    @extend %phone-text;
+  }
+
+  &__text {
+    @extend %general-text;
+  }
+
+  &__button {
+    @extend %button-style;
+  }
+}

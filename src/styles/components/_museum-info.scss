@@ -1,0 +1,11 @@
+// TODO
+
+.museum-info {
+  &__title {
+    @extend %section-title;
+  }
+
+  &__phone {
+    @extend %phone-text;
+  }
+}

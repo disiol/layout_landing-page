@@ -1,0 +1,42 @@
+// utils/placeholders.scss
+
+// Placeholder for section titles
+%section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+// Placeholder for phone numbers
+%phone-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+// Placeholder for general text
+%general-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+// Placeholder for buttons
+%button-style {
+  background-color: #b00000;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: #900000;
+  }
+
+  &::after {
+    background-color: #EB343D;
+  }
+
+}
