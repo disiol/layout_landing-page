@@ -17,14 +17,13 @@ img,
 p,
 .main {
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
+  font-family: Cinzel, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .body {
   margin: 0;
-  font-family: Arial, sans-serif;
   display: grid;
   grid-template-columns: 1fr; // Одноколонковий макет за замовчуванням
   grid-template-rows: auto 1fr auto; // Визначає висоту заголовка, основного контенту і підвалу

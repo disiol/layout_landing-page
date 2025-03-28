@@ -21,13 +21,17 @@
 }
 
 // Placeholder for buttons
-%button-style {
+%primary-button-style {
   background-color: #b00000;
   color: white;
   padding: 0.8rem 1.5rem;
   border: none;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
 
   &:hover {
     background-color: #900000;
@@ -37,11 +41,44 @@
     background-color: #eb343d;
   }
 
-  /* THE MET */
 
   %header-logo-style {
     position: absolute;
     width: 64px;
     height: 46px;
+  }
+}
+
+%secondary-button-style {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  transition: background 0.3s ease;
+
+  &:hover {
+    text-decoration: #fff underline;
+  }
+
+  %header-logo-style {
+    position: absolute;
+    width: 64px;
+    height: 46px;
+  }
+
+
+  %input-style {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #161616;
+    &::placeholder {
+      color: #333;
+      font-style: italic;
+      opacity: 0.7; // Деякі браузери можуть ігнорувати це
+    }
   }
 }
