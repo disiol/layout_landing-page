@@ -13,4 +13,14 @@
     background: #d12d35;
     z-index: 1000; /* Задати порядок відображення */
   }
+
+  &__close{
+    @extend %icons-size;
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  &__close:hover {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
 }
