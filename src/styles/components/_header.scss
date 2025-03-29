@@ -33,8 +33,16 @@
 
   &__contacts-icon,
   &__burger-menu {
-    width: 24px; // Приклад ширини для іконок
-    margin-left: 10px; // Відступ між іконками
+    width: 24px;
+    height: 24px;
+  }
+
+  &__contacts-icon {
+    margin-left: 144px; // Відступ між іконками
+  }
+
+  &__burger-menu {
+    margin-left: 24px; // Відступ між іконками
   }
 
   &__title {
