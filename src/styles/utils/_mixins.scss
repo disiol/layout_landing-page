@@ -36,3 +36,10 @@
 
   color: white;
 }
+
+@mixin icons-style {
+  width: 24px;
+  height: 24px;
+
+  @extend %cursor;
+}

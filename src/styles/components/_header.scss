@@ -26,7 +26,7 @@
   }
 
   &__icon {
-    @extend %icons-size;
+    @include icons-style;
   }
 
   &__contacts-icon {
