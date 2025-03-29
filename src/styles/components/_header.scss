@@ -29,6 +29,10 @@
   }
 
   &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     margin-top: 129px;
     font-weight: 700;
     font-size: 40px;
@@ -36,6 +40,9 @@
     letter-spacing: -1.5px;
     text-align: center;
     vertical-align: middle;
+    width: 280px;
+    height: 80px;
+
 
   }
 }
