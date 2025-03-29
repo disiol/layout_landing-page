@@ -1,10 +1,7 @@
-@import '../utils/variables';
-@import '../utils/mixins';
-
 .header {
-  grid-column: 1 / -1; // Заголовок займає всю ширину
+  grid-column: 1 / -1;
 
-  @include header-style; // Використання міксину для стилю заголовка
+  @include header-style;
 
   &__nav {
     display: flex;
@@ -12,14 +9,11 @@
     align-items: center;
   }
 
-  &__logo {
-    @extend %header-logo-style;
-  }
 
   &__contacts {
     display: none;
 
-    // TODO
+    // TODO: Додати стилі для активного стану
     // margin-top: 24px;
     // background: rgba(34, 33, 33, 0.4);
     // display: flex;
@@ -28,21 +22,20 @@
     // flex-direction: column;
     // width: 201px;
     // height: 116px;
-    // margin-left: 20px; // Відступ між логотипом і контактами
+    // margin-left: 20px;
   }
 
-  &__contacts-icon,
-  &__burger-menu {
+  &__icon {
     width: 24px;
     height: 24px;
   }
 
   &__contacts-icon {
-    margin-left: 144px; // Відступ між іконками
+    margin-left: 144px; // Можливо, варто замінити на flex-gap у контейнері
   }
 
   &__burger-menu {
-    margin-left: 24px; // Відступ між іконками
+    margin-left: 24px;
   }
 
   &__title {
@@ -56,7 +49,6 @@
     line-height: 100%;
     letter-spacing: -1.5px;
     text-align: center;
-    vertical-align: middle;
     width: 280px;
     height: 80px;
   }
