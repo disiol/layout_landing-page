@@ -35,7 +35,8 @@
 @mixin icon-style($size: 24px) {
   width: $size;
   height: $size;
-  cursor: pointer;
+
+  @extend %cursor;
 }
 
 // Міксин для заміни зображення при наведенні
