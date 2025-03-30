@@ -9,7 +9,6 @@
     align-items: center;
   }
 
-
   &__contacts {
     display: none;
 
@@ -26,15 +25,25 @@
   }
 
   &__icon {
-    @include icons-style;
+    @include icon-style;
   }
 
   &__contacts-icon {
-    margin-left: 144px; // Можливо, варто замінити на flex-gap у контейнері
+    margin-left: 144px;
+
+    @include hover-image(
+      '../images/icons/header/icon-phone-call.png',
+      '../images/icons/header/icon-phone-call.png'
+    );
   }
 
   &__burger-menu {
     margin-left: 24px;
+
+    @include hover-image(
+      '../images/icons/menu/icon-burger-menu.png',
+      '../images/icons/menu/icon-burger-menu-hover.png'
+    );
   }
 
   &__title {

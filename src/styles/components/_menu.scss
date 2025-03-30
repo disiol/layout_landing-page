@@ -15,7 +15,7 @@
   }
 
   &__close{
-    @include icons-style;
+    @include icon-style;
 
     transition: transform 0.3s ease, opacity 0.3s ease;
   }

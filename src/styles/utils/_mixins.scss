@@ -37,9 +37,18 @@
   color: white;
 }
 
-@mixin icons-style {
+@mixin icon-style {
   width: 24px;
   height: 24px;
 
   @extend %cursor;
+}
+
+@mixin hover-image($default, $hover) {
+  background: url($default) no-repeat center center;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: url($hover) no-repeat center center;
+  }
 }
