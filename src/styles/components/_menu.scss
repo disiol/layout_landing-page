@@ -17,10 +17,9 @@
   &__close{
     @include icon-style;
 
-    transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
   &__close:hover {
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    // TODO
   }
 }
