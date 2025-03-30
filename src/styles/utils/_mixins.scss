@@ -44,11 +44,17 @@
   @extend %cursor;
 }
 
-@mixin hover-image($default, $hover) {
-  background: url($default) no-repeat center center;
+@mixin hover-image($default, $hover, $width, $height, $size: contain) {
+  width: $width;
+  height: $height;
+  background: url($default) no-repeat center;
+  background-size: $size;
   transition: background 0.3s ease;
 
   &:hover {
-    background: url($hover) no-repeat center center;
+    background: url($hover) no-repeat center;
+    background-size: $size;
   }
 }
+
+

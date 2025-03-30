@@ -33,7 +33,9 @@
 
     @include hover-image(
       '../images/icons/header/icon-phone-call.png',
-      '../images/icons/header/icon-phone-call.png'
+      '../images/icons/header/icon-phone-call.png',
+      24px,
+      24px
     );
   }
 
@@ -42,7 +44,9 @@
 
     @include hover-image(
       '../images/icons/menu/icon-burger-menu.png',
-      '../images/icons/menu/icon-burger-menu-hover.png'
+      '../images/icons/menu/icon-burger-menu-hover.png',
+      24px,
+      24px
     );
   }
 
