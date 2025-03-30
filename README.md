@@ -20,3 +20,31 @@ Follow the instructions in this and next lessons to implement the page block by 
 # Tips & Hints
 - Check `background-image: url()` to be relative to the `main.scss`. So should start with `../images`.
 - If some points from the checklist are not relevant to your design, just skip it.
+
+/your-project
+│
+├── /images
+│   ├── /icons
+│   ├── /header
+│   └── /menu
+│
+├── /scripts
+│   └── main.js
+│
+├── /styles
+│   ├── /base
+│   │   └── _base.scss
+│   ├── /components
+│   │   ├── contact.scss
+│   │   ├── exhibitions.scss
+│   │   ├── footer.scss
+│   │   ├── header.scss
+│   │   ├── hours.scss
+│   │   └── menu.scss
+│   ├── /utils
+│   │   ├── mixins.scss
+│   │   ├── placeholders.scss
+│   │   └── variables.scss
+│   └── main.scss
+│
+└── index.html

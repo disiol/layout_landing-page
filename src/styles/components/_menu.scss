@@ -1,25 +1,58 @@
-// TODO
 .menu {
-  display: none;
+  display: none; // За замовчуванням приховане
 
-  /* Menu (320) */
   &--open {
-    position: relative;
-    display: block; /* Відобразити меню, коли клас активний */
-    width: 744px;
-    height: 842px;
-    top: 0; /* Вирівняти по верху */
-    right: 0; /* Вирівняти по правому краю */
-    background: #d12d35;
-    z-index: 1000; /* Задати порядок відображення */
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: $menu-width;
+    height: $menu-height;
+    top: 0;
+    right: 0;
+    background: $primary-color;
+    color: #fff;
+    z-index: 1000;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
   }
 
-  &__close{
-    @include icon-style;
-
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
   }
 
-  &__close:hover {
-    // TODO
+  &__close {
+    @include icon-style(32px);
+    @include hover-image(
+      '../images/icons/menu/icon-close.png',
+      '../images/icons/menu/icon-close.png',
+      32px,
+      32px
+    );
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__link {
+    display: block;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ffd700; // Жовтий при наведенні
+    }
   }
 }

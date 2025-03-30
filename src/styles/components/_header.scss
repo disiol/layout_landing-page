@@ -10,18 +10,7 @@
   }
 
   &__contacts {
-    display: none;
-
-    // TODO: Додати стилі для активного стану
-    // margin-top: 24px;
-    // background: rgba(34, 33, 33, 0.4);
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-    // flex-direction: column;
-    // width: 201px;
-    // height: 116px;
-    // margin-left: 20px;
+    display: none; // Стилі для активного стану додаються в JS
   }
 
   &__icon {
@@ -33,35 +22,24 @@
 
     @include hover-image(
       '../images/icons/header/icon-phone-call.png',
-      '../images/icons/header/icon-phone-call.png',
-      24px,
-      24px
+      '../images/icons/header/icon-phone-call.png'
     );
   }
 
   &__burger-menu {
-    margin-left: 24px;
+    margin-right: 24px;
 
     @include hover-image(
-      '../images/icons/menu/icon-burger-menu.png',
-      '../images/icons/menu/icon-burger-menu-hover.png',
-      24px,
-      24px
+      '../images/icons/header/icon-burger-menu.png',
+      '../images/icons/header/icon-burger-menu-hover.png'
     );
   }
 
   &__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-top: 129px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 100%;
-    letter-spacing: -1.5px;
-    text-align: center;
     width: 280px;
     height: 80px;
+    margin-top: 129px;
+
+    @extend %section-title;
   }
 }

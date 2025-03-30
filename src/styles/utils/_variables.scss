@@ -1,4 +1,37 @@
+// Основні змінні
+
+// Відступи та сітка
 $grid-gap: 20px;
-$header-background-image: url('../images/icons/header/image-heder-beac.png'); // Замість '/path/to/your/image.jpg' вставте шлях до вашого зображення
-$header-height: 568px; // Висота заголовка
-$header-width: 320px; // Висота заголовка
+
+// Кольори
+$primary-color: #b00000;
+$secondary-color: #900000;
+$text-color: #333;
+$secondary-text-color: #666;
+$placeholder-color: #999;
+$input-text-color: #161616;
+$button-text-color: white;
+
+// Фон заголовка
+$header-background-image: url('../images/icons/header/image-heder-beac.png');
+
+// Розміри заголовка
+$header-height: 568px;
+$header-width: 320px;
+
+// Стилі кнопок
+$button-padding: 0.8rem 1.5rem;
+$button-border-radius: 5px;
+
+// Розміри тексту
+$section-title-size: 40px;
+$phone-text-size: 1.2rem;
+$general-text-size: 1rem;
+
+// Курсор
+$cursor-url: url('../images/icons/cursor-mouse-mice.png');
+$cursor-size: 16px 16px;
+
+// Розміри меню
+$menu-width: 744px;
+$menu-height: 842px;

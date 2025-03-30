@@ -1,9 +1,11 @@
-// Placeholder for section titles
+// utils/placeholders.scss
 %section-title {
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: $section-title-size;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 // Placeholder for phone numbers
@@ -71,8 +73,6 @@
     opacity: 0.7;
   }
 }
-
-
 
 // Cursor style as a separate placeholder
 %cursor {
