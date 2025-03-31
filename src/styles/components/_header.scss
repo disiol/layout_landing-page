@@ -18,6 +18,9 @@
     height: 116px;
     color: #fff;
   }
+  &__contacts--show {
+    display: block;
+  }
 
   &__icon {
     @include icon-style;

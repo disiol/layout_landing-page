@@ -22,11 +22,16 @@
   - [ ] Контакти:
     - [ ] Стилі тексту
     - [ ] Відступи між рядками
+    - [ ] показувати/ховати при кликі на іконку контактів
+    - [ ] phone icons and phone numbers are real links to start a call
+    - [ ] All addresses should be links to some location on Google Maps. Open them in a new tab with `target="_blank"`.
+
   - [x] Іконки:
     - [x] Бургер-меню
     - [x] Контакти
     - [x] Ховер-ефекти
       - [x] Бургер-меню
+  -[ ] header__title
 
 ## Бокове меню
 - [ ] Контейнер меню:
