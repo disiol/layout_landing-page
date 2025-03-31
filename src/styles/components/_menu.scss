@@ -26,12 +26,10 @@
   }
 
   &__close {
-    @include icon-style(32px);
+    @include icon-style;
     @include hover-image(
       '../images/icons/menu/icon-close.png',
       '../images/icons/menu/icon-close.png',
-      32px,
-      32px
     );
   }
 
