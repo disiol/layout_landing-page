@@ -10,7 +10,13 @@
   }
 
   &__contacts {
-    display: none; // Стилі для активного стану додаються в JS
+     display: none;
+
+    @extend %phone-text-size;
+
+    width: 201px;
+    height: 116px;
+    color: #fff;
   }
 
   &__icon {
