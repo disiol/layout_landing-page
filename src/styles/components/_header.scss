@@ -10,7 +10,7 @@
   }
 
   &__contacts {
-     display: none;
+    display: none;
 
     @extend %phone-text-size;
 
@@ -23,6 +23,10 @@
     @include icon-style;
   }
 
+  &__icons {
+    display: flex;
+  }
+
   &__contacts-icon {
     margin-left: 144px;
 
@@ -33,7 +37,7 @@
   }
 
   &__burger-menu {
-    margin-right: 24px;
+    margin-left: 24px;
 
     @include hover-image(
       '../images/icons/header/icon-burger-menu.png',

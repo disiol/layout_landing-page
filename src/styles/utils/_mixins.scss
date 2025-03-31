@@ -45,11 +45,11 @@
   width: $icons-size;
   height: $icons-size;
   background: url($default)  no-repeat center center;
-  background-size:  $icons-size;
+  background-size:  $icons-size,$icons-size;
   transition: background $transition-speed ease;
 
   &:hover {
     background: url($hover)  no-repeat center center;
-    background-size: $icons-size;
+    background-size: $icons-size,$icons-size;
   }
 }
