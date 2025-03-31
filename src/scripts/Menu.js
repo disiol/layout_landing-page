@@ -12,7 +12,8 @@ export class Menu {
     this.menuClose.addEventListener('click', () => this.close());
 
     document.addEventListener('click', (event) =>
-      this.closeOnOutsideClick(event),);
+      this.closeOnOutsideClick(event),
+    );
   }
 
   open() {
