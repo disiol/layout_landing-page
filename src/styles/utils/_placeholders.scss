@@ -9,10 +9,13 @@
 }
 
 // Placeholder for phone numbers
-%phone-text {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
+%phone-text-size {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
 // Placeholder for general text
