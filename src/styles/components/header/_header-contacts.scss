@@ -1,21 +1,23 @@
 /* _header-contacts.scss */
 .header {
   &__contacts {
-    display: none;
+    display: none; // Initially hidden
     text-align: right;
     width: 201px;
     height: 116px;
 
-    @include respond-to(md) {
-      display: block;
-    }
-
     &--show {
-      display: block;
+      display: block; // Show when active
       position: absolute;
       right: 0;
       padding: 24px 24px 0 0;
       z-index: 10;
     }
   }
+
+  &__location-title,
+  &__phone {
+    @extend %phone-text-size; // Ensure this placeholder is defined
+  }
 }
+

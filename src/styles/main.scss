@@ -1,8 +1,9 @@
+// main.css
 @import 'utils/variables';
 @import 'utils/placeholders';
 @import 'utils/mixins';
 @import 'base/base';
-@import 'components/header';
+@import 'components/header/main-header';
 @import 'components/menu';
 @import 'components/museum-info';
 @import 'components/hours';
