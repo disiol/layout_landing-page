@@ -1,17 +1,19 @@
 /* _header-contacts.scss */
 .header {
   &__contacts {
-    display: none; // Initially hidden
+    position: absolute;
     text-align: right;
     width: 201px;
     height: 116px;
+    padding: 24px 24px 0 0;
+    z-index: 10;
 
+    // Initially hidden
     &--show {
       display: block; // Show when active
-      position: absolute;
-      right: 0;
-      padding: 24px 24px 0 0;
-      z-index: 10;
+    }
+    &--hidden {
+      display: none; // Show when active
     }
   }
 
