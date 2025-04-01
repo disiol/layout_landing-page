@@ -1,0 +1,29 @@
+/* _header-base.scss */
+.header {
+  grid-column: 1 / -1;
+
+  @include header-style;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon-style {
+    @include icon-style;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    width: 280px;
+    height: 80px;
+    margin-top: 129px;
+
+    @extend %section-title;
+  }
+}

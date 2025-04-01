@@ -1,0 +1,21 @@
+/* _header-contacts.scss */
+.header {
+  &__contacts {
+    display: none;
+    text-align: right;
+    width: 201px;
+    height: 116px;
+
+    @include respond-to(md) {
+      display: block;
+    }
+
+    &--show {
+      display: block;
+      position: absolute;
+      right: 0;
+      padding: 24px 24px 0 0;
+      z-index: 10;
+    }
+  }
+}

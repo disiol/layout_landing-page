@@ -22,9 +22,8 @@ Follow the instructions in this and next lessons to implement the page block by 
 - If some points from the checklist are not relevant to your design, just skip it.
 
 ```md
-# Структура проєкту
+## Оновлена структура проєкту
 
-## Коренева директорія
 ```
 - `.github/`
 - `.idea/`
@@ -61,7 +60,11 @@ Follow the instructions in this and next lessons to implement the page block by 
       - `_contact.scss`
       - `_exhibitions.scss`
       - `_footer.scss`
-      - `_header.scss`
+      - `header/`
+        - `_header-base.scss`
+        - `_header-contacts.scss`
+        - `_header-buttons.scss`
+        - `_header.scss`
       - `_hours.scss`
       - `_menu.scss`
       - `_museum-info.scss`
