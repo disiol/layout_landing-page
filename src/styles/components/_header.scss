@@ -12,6 +12,10 @@
   &__contacts {
     display: none;
     text-align: right;
+    width: 201px;
+    height: 116px;
+
+
 
     // @include respond-to(md) {
     //  display: block;
@@ -20,9 +24,9 @@
     &-show {
       display: block;
       position: absolute;
-      top: 100%;
       right: 0;
-      padding: 15px;
+      padding-top: 24px;
+      padding-right: 24px;
       z-index: 10;
     }
   }
