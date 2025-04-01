@@ -18,13 +18,13 @@
 - [x] Логотип:
   - [x] Розмір
   - [x] Позиція
-- [ ] header__nav
-  - [ ] Контакти:
-    - [ ] Стилі тексту
-    - [ ] Відступи між рядками
-    - [ ] показувати/ховати при кликі на іконку контактів
-    - [ ] phone icons and phone numbers are real links to start a call
-    - [ ] All addresses should be links to some location on Google Maps. Open them in a new tab with `target="_blank"`.
+- [x] header__nav
+  - [x] Контакти:
+    - [x] Стилі тексту
+    - [x] Відступи між рядками
+    - [x] показувати/ховати при кликі на іконку контактів
+    - [x] phone icons and phone numbers are real links to start a call
+    - [x] All addresses should be links to some location on Google Maps. Open them in a new tab with `target="_blank"`.
 
   - [x] Іконки:
     - [x] Бургер-меню
@@ -56,6 +56,8 @@
 - [ ] Телефони:
   - [ ] Колір
   - [ ] Вага шрифту
+  - [ ] All addresses should be links to some location on Google Maps. Open them in a new tab with `target="_blank"`.
+
 
 ### Години роботи
 - [ ] Заголовок секції:
