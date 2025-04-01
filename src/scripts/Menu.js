@@ -2,8 +2,8 @@
 
 export class Menu {
   constructor() {
-    this.burgerMenu = document.getElementById('header__burger-menu-toggle');
-    this.menu = document.getElementById('menu-toggle');
+    this.burgerMenu = document.getElementById('header__menu-toggle');
+    this.menu = document.getElementById('menu');
     this.menuClose = document.getElementById('menu-close');
   }
 

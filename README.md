@@ -21,30 +21,75 @@ Follow the instructions in this and next lessons to implement the page block by 
 - Check `background-image: url()` to be relative to the `main.scss`. So should start with `../images`.
 - If some points from the checklist are not relevant to your design, just skip it.
 
-/your-project
-│
-├── /images
-│   ├── /icons
-│   ├── /header
-│   └── /menu
-│
-├── /scripts
-│   └── main.js
-│
-├── /styles
-│   ├── /base
-│   │   └── _base.scss
-│   ├── /components
-│   │   ├── contact.scss
-│   │   ├── exhibitions.scss
-│   │   ├── footer.scss
-│   │   ├── header.scss
-│   │   ├── hours.scss
-│   │   └── menu.scss
-│   ├── /utils
-│   │   ├── mixins.scss
-│   │   ├── placeholders.scss
-│   │   └── variables.scss
-│   └── main.scss
-│
-└── index.html
+```md
+# Структура проєкту
+
+## Коренева директорія
+```
+- `.github/`
+- `.idea/`
+- `.parcel-cache/`
+- `backstop_data/`
+- `cypress/`
+  - `integration/`
+    - `page.spec.js`
+- `dist/`
+- `node_modules/`
+- `src/`
+  - `images/`
+    - `icons/`
+      - `footer/`
+        - `footer_bec.png`
+      - `header/`
+        - `icon-burger-menu.png`
+        - `icon-burger-menu-hover.png`
+        - `icon-phone-call.png`
+        - `image-header-beac.png`
+        - `logo-the-met.png`
+      - `menu/`
+        - `icon-close.png`
+      - `cursor-mouse-mice.png`
+  - `scripts/`
+    - `Contacts.js`
+    - `main.js`
+    - `Menu.js`
+    - `UIController.js`
+  - `styles/`
+    - `base/`
+      - `_base.scss`
+    - `components/`
+      - `_contact.scss`
+      - `_exhibitions.scss`
+      - `_footer.scss`
+      - `_header.scss`
+      - `_hours.scss`
+      - `_menu.scss`
+      - `_museum-info.scss`
+    - `utils/`
+      - `_mixins.scss`
+      - `_placeholders.scss`
+      - `_variables.scss`
+    - `main.scss`
+- `index.html`
+- `.bemlintrc.json`
+- `.editorconfig`
+- `.eslintrc.js`
+- `.eslintignore`
+- `.gitignore`
+- `.linthtmllrc.json`
+- `.prettierignore`
+- `.prettierrc`
+- `.stylelintrc.js`
+- `.stylelintignore`
+- `backstop.json`
+- `checklist.md`
+- `cypress.config.js`
+- `LICENSE`
+- `package.json`
+- `package-lock.json`
+- `README.md`
+- `todo.md`
+- `External Libraries/`
+```
+
+

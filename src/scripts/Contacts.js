@@ -5,7 +5,7 @@ export class Contacts {
     this.contactsIcon = document.getElementById('contacts-toggle');
     this.contacts = document.getElementById('header__contacts');
     this.isContactsOpen = false;
-    this.headerContactsShow = 'header__contacts--show';
+    this.headerContactsShow = 'header__contacts-show';
   }
 
   init() {

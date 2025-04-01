@@ -24,50 +24,78 @@
   <body class="body">
     <header class="header">
       <nav class="header__nav">
-        <img
-          class="header__logo"
-          src="./images/icons/header/logo-the-met.png"
-          alt="The Met Logo"
-        />
-        <section
+        <a
+          href="/"
+          class="header__logo-link"
+        >
+          <img
+            class="header__logo"
+            src="./images/icons/header/logo-the-met.png"
+            alt="The Met Logo"
+          />
+        </a>
+
+        <div
           class="header__contacts"
           id="header__contacts"
         >
-          <h2 class="header__contacts__title">The Met Fifth Avenue</h2>
-          <p class="header__contacts__phone">+1 212-535-7710</p>
-          <h2 class="header__contacts__title">The Met Cloisters</h2>
-          <p class="header__contacts__phone">+1 212-923-3700</p>
-        </section>
+          <div class="header__location">
+            <h2 class="header__location-title">The Met Fifth Avenue</h2>
+            <a
+              href="tel:+12125357710"
+              class="header__phone"
+            >
+              +1 212-535-7710
+            </a>
+          </div>
 
-        <section
-          class="header__icons"
-          id="header__icons"
-        >
-          <span
-            class="header__contacts-icon header__icon"
+          <div
+            class="header__location"
+            id="header__location"
+          >
+            <h2 class="header__location-title">The Met Cloisters</h2>
+            <a
+              href="tel:+12129233700"
+              class="header__phone"
+            >
+              +1 212-923-3700
+            </a>
+          </div>
+        </div>
+
+        <div class="header__controls">
+          <div
+            class="header__contact-toggle header__icon-style"
             id="contacts-toggle"
             aria-label="Show contacts"
-          ></span>
-          <span
-            class="header__burger-menu header__icon"
-            id="header__burger-menu-toggle"
+            aria-expanded="false"
+            aria-controls="header__contact"
+          ></div>
+
+          <div
+            class="header__menu-toggle header__icon-style"
+            id="header__menu-toggle"
             aria-label="Open menu"
-          ></span>
-        </section>
+            aria-expanded="false"
+            aria-controls="menu"
+          ></div>
+        </div>
       </nav>
       <h1 class="header__title">Welcome to The MET</h1>
     </header>
 
     <aside
       class="menu"
-      id="menu-toggle"
+      id="menu"
+      aria-hidden="true"
     >
-      <nav class="menu__nav">
+      <div class="menu__header">
         <a
           href="/"
-          class="menu__logo"
+          class="menu__logo-link"
         >
           <img
+            class="menu__logo"
             src="images/icons/header/logo-the-met.png"
             alt="The Met Logo"
           />
@@ -77,93 +105,120 @@
           id="menu-close"
           aria-label="Close menu"
         ></button>
+      </div>
+
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a
+              href="#"
+              class="menu__link"
+            >
+              Home
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              href="#"
+              class="menu__link"
+            >
+              About Us
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              href="#"
+              class="menu__link"
+            >
+              Now on View
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              href="#"
+              class="menu__link"
+            >
+              Explore Online
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              href="#"
+              class="menu__link"
+            >
+              Contacts
+            </a>
+          </li>
+        </ul>
       </nav>
-      <ul class="menu__list">
-        <li>
-          <a
-            href="#"
-            class="menu__link"
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="menu__link"
-          >
-            About Us
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="menu__link"
-          >
-            Now on View
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="menu__link"
-          >
-            Explore Online
-          </a>
-        </li>
-        <li>
-          <a
-            href="#"
-            class="menu__link"
-          >
-            Ontacts
-          </a>
-        </li>
-      </ul>
     </aside>
 
     <main class="main">
       <section class="hours">
         <h2 class="hours__title">Museum Hours</h2>
         <div class="hours__location">
-          <h3>The Met Fifth Avenue</h3>
-          <p>10 AM - 5 PM (Sun, Mon, Tue, Thu)</p>
-          <p>10 AM - 9 PM (Fri, Sat)</p>
-          <p class="hours__closed">Closed — Wed</p>
+          <h3 class="hours__location-title">The Met Fifth Avenue</h3>
+          <p class="hours__schedule">10 AM - 5 PM (Sun, Mon, Tue, Thu)</p>
+          <p class="hours__schedule">10 AM - 9 PM (Fri, Sat)</p>
+          <p class="hours__schedule hours__schedule--closed">Closed — Wed</p>
         </div>
       </section>
 
       <section class="exhibitions">
-        <h2>Now on View</h2>
+        <h2 class="exhibitions__title">Now on View</h2>
         <article class="exhibitions__item">
-          <h3>A New Look at Old Masters</h3>
-          <p>December 12, 2020 – Spring 2023</p>
+          <h3 class="exhibitions__item-title">A New Look at Old Masters</h3>
+          <p class="exhibitions__item-dates">December 12, 2020 – Spring 2023</p>
         </article>
       </section>
 
       <section class="contact">
-        <h2>Contact Us</h2>
+        <h2 class="contact__title">Contact Us</h2>
         <form class="contact__form">
-          <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            class="contact__input"
-            required
-          />
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            class="contact__input"
-            required
-          />
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            class="contact__textarea"
-            required
-          ></textarea>
+          <div class="contact__field">
+            <label
+              for="name"
+              class="contact__label"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              class="contact__input"
+              required
+            />
+          </div>
+
+          <div class="contact__field">
+            <label
+              for="email"
+              class="contact__label"
+            >
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              class="contact__input"
+              required
+            />
+          </div>
+
+          <div class="contact__field">
+            <label
+              for="message"
+              class="contact__label"
+            >
+              Message
+            </label>
+            <textarea
+              id="message"
+              class="contact__textarea"
+              required
+            ></textarea>
+          </div>
+
           <button
             type="submit"
             class="contact__button"
@@ -175,7 +230,7 @@
     </main>
 
     <footer class="footer">
-      <p>&copy; 2023 The Met. All rights reserved.</p>
+      <p class="footer__copyright">&copy; 2023 The Met. All rights reserved.</p>
     </footer>
   </body>
 </html>
