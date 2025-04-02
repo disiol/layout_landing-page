@@ -16,6 +16,7 @@
     z-index: 1000;
     padding: 20px;
     transition: transform 0.3s ease-in-out;
+
   }
 
   &__nav {
@@ -36,21 +37,19 @@
   &__list {
     list-style: none;
     padding: 0;
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
 
   &__link {
-    display: block;
-    padding: 15px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    @extend %phone-text-size;
+    @extend %secondary-button-style;
 
-    &:hover {
-      color: #ffd700; // Жовтий при наведенні
-    }
+  }
+  &__location-title,
+  &__location-link,
+  &__phone {
+    @extend %secondary-button-style;
+    @extend %phone-text-size;
   }
 }
