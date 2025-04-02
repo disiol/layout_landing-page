@@ -25,6 +25,7 @@
     - [x] показувати/ховати при кликі на іконку контактів
     - [x] phone icons and phone numbers are real links to start a call
     - [x] All addresses should be links to some location on Google Maps. Open them in a new tab with `target="_blank"`.
+    - [x]  має з'являтись при наведенні тільки на  дескопі.
 
   - [x] Іконки:
     - [x] Бургер-меню
