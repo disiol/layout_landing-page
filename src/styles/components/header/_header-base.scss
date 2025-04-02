@@ -22,7 +22,7 @@
   &__title {
     width: 280px;
     height: 80px;
-    margin-top: 129px;
+    margin: 129px auto auto;
 
     @extend %section-title;
   }
