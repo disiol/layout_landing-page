@@ -16,6 +16,7 @@
       justify-content: space-between;
       align-items: center;
     }
+
     &--hidden {
       display: none;
     }
@@ -24,14 +25,12 @@
   &__location-title,
   &__location-link,
   &__phone {
-    @extend %cursor;
+    @extend %secondary-button-style;
+    @extend %phone-text-size;
 
-    text-decoration: none;
-    color: white;
-
-    @extend %phone-text-size; // Ensure this placeholder is defined
   }
-  &__location-title{
+
+  &__location-title {
     padding-top: 8px;
   }
 }
