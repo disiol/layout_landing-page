@@ -20,9 +20,9 @@
   }
 
   &__title {
-
     @extend %section-title;
 
+    overflow: hidden;
     width: 280px;
     height: 80px;
     margin: 129px auto auto;
