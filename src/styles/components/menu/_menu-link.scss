@@ -1,6 +1,9 @@
 .menu__link {
   @extend %phone-text-size;
   @extend %secondary-button-style;
+
+  padding: 11px 69px 22px 20px;
+
 }
 
 .menu__location-title,
