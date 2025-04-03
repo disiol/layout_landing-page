@@ -15,16 +15,19 @@ li,
 img,
 p,
 .main {
+  overflow-x: hidden; /* Вимикає горизонтальну прокрутку */
+
   box-sizing: border-box;
-  font-family: Cinzel, sans-serif;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Вимикає горизонтальну прокрутку */
+
+  font-family: Cinzel, sans-serif;
 }
 
 .body {
-  overflow-y: hidden; /* Вимикає горизонтальну прокрутку */
   scroll-behavior: smooth; /* Додає плавний ефект при прокрутці */
+
+  overflow-y: hidden; /* Вимикає горизонтальну прокрутку */
   display: grid;
   grid-template-columns: 2fr; // Одноколонковий макет за замовчуванням
   grid-template-rows: auto 1fr auto; // Визначає висоту заголовка, основного контенту і підвалу

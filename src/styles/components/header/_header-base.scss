@@ -6,8 +6,8 @@
 
   &__nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
 
   &__icon-style {
@@ -20,10 +20,11 @@
   }
 
   &__title {
+
+    @extend %section-title;
+
     width: 280px;
     height: 80px;
     margin: 129px auto auto;
-
-    @extend %section-title;
   }
 }

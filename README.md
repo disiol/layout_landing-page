@@ -24,7 +24,6 @@ Follow the instructions in this and next lessons to implement the page block by 
 ```md
 ## Оновлена структура проєкту
 
-```
 - `.github/`
 - `.idea/`
 - `.parcel-cache/`
@@ -64,9 +63,16 @@ Follow the instructions in this and next lessons to implement the page block by 
         - `_header-base.scss`
         - `_header-contacts.scss`
         - `_header-buttons.scss`
-        - `_header.scss`
+        - `_main-header.scss`
       - `_hours.scss`
-      - `_menu.scss`
+      - `menu/`
+        - `_menu-base.scss`       // Стили для меню
+        - `_menu-header.scss` // Стили для заголовка меню
+        - `_menu-nav.scss`    // Стили для навигации
+        - `_menu-close.scss`  // Стили для кнопки закрытия
+        - `_menu-list.scss`   // Стили для списка
+        - `_menu-link.scss`   // Стили для ссылок
+        - `_main-menu.scss`   // Стили для ссылок
       - `_museum-info.scss`
     - `utils/`
       - `_mixins.scss`
@@ -93,6 +99,5 @@ Follow the instructions in this and next lessons to implement the page block by 
 - `README.md`
 - `todo.md`
 - `External Libraries/`
-```
 
 

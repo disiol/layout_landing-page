@@ -13,8 +13,8 @@
     'desktop': 1260px,
   );
 
-  @if map-has-key($breakpoints, $breakpoint) {
-    @media (min-width: map-get($breakpoints, $breakpoint)) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @media (min-width: map.get($breakpoints, $breakpoint)) {
       @content;
     }
   }
@@ -22,37 +22,38 @@
 
 // Стиль для заголовка
 @mixin header-style {
-  padding: 34px 20px 0;
   position: absolute;
-  height: $header-height;
+
   width: $header-width;
+  height: $header-height;
+  padding: 25px 20px 0;
+
+  color: white;
+
   background: $header-background-image no-repeat center center;
   background-size: cover;
-  color: white;
 }
 
 // Універсальний стиль для іконок
-@mixin icon-style{
+@mixin icon-style {
+  @extend %cursor;
+
   width: $icons-size;
   height: $icons-size;
-
-  @extend %cursor;
 }
 
 // Міксин для заміни зображення при наведенні
-@mixin hover-image(
-  $default,
-  $hover,
-  $transition-speed: 0.3s
-) {
+@mixin hover-image($default, $hover, $transition-speed: 0.3s) {
   width: $icons-size;
   height: $icons-size;
-  background: url($default)  no-repeat center center;
-  background-size:  $icons-size,$icons-size;
+
+  background: url($default) no-repeat center center;
+  background-size: $icons-size, $icons-size;
+
   transition: background $transition-speed ease;
 
   &:hover {
-    background: url($hover)  no-repeat center center;
-    background-size: $icons-size,$icons-size;
+    background: url($hover) no-repeat center center;
+    background-size: $icons-size, $icons-size;
   }
 }

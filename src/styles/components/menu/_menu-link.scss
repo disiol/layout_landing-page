@@ -1,0 +1,11 @@
+.menu__link {
+  @extend %phone-text-size;
+  @extend %secondary-button-style;
+}
+
+.menu__location-title,
+.menu__location-link,
+.menu__phone {
+  @extend %secondary-button-style;
+  @extend %phone-text-size;
+}

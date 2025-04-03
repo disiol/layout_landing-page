@@ -2,19 +2,21 @@
 .header {
   &__contacts {
     position: absolute;
-    text-align: right;
+    z-index: 10;
+
     width: 201px;
     height: 116px;
     padding-top: 50px;
-    padding-left: 16px;
     padding-right: 16px;
-    z-index: 10;
+    padding-left: 16px;
+
+    text-align: right;
 
     // Initially hidden
     &--show {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
     }
 
     &--hidden {
