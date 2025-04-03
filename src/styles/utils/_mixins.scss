@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "variables";
+
 // Гнучкий міксин для grid
 @mixin grid-layout($columns, $row-gap: 10px, $column-gap: 10px) {
   display: grid;
@@ -24,13 +27,13 @@
 @mixin header-style {
   position: absolute;
 
-  width: $header-width;
-  height: $header-height;
+  width: variables.$header-width;
+  height: variables.$header-height;
   padding: 25px 20px 0;
 
   color: white;
 
-  background: $header-background-image no-repeat center center;
+  background: variables.$header-background-image no-repeat center center;
   background-size: cover;
 }
 
@@ -38,22 +41,22 @@
 @mixin icon-style {
   @extend %cursor;
 
-  width: $icons-size;
-  height: $icons-size;
+  width: variables.$icons-size;
+  height: variables.$icons-size;
 }
 
 // Міксин для заміни зображення при наведенні
 @mixin hover-image($default, $hover, $transition-speed: 0.3s) {
-  width: $icons-size;
-  height: $icons-size;
+  width: variables.$icons-size;
+  height: variables.$icons-size;
 
   background: url($default) no-repeat center center;
-  background-size: $icons-size, $icons-size;
+  background-size: variables.$icons-size, variables.$icons-size;
 
   transition: background $transition-speed ease;
 
   &:hover {
     background: url($hover) no-repeat center center;
-    background-size: $icons-size, $icons-size;
+    background-size: variables.$icons-size, variables.$icons-size;
   }
 }
