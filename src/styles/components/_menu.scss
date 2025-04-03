@@ -1,22 +1,29 @@
 .menu {
-  display: none; // За замовчуванням приховане
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: $menu-width;
+  height: $menu-height;
+  top: 0;
+  right: 0;
+  background: $primary-color;
+  color: #fff;
+  z-index: 1000;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out,
+    visibility 0.3s;
 
   &--open {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: $menu-width;
-    height: $menu-height;
-    top: 0;
-    right: 0;
-    background: $primary-color;
-    color: #fff;
-    z-index: 1000;
-    padding: 20px;
-    transition: transform 0.3s ease-in-out;
-
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
   }
 
   &__nav {
@@ -30,7 +37,7 @@
     @include icon-style;
     @include hover-image(
       '../images/icons/menu/icon-close.png',
-      '../images/icons/menu/icon-close.png',
+      '../images/icons/menu/icon-close.png'
     );
   }
 
@@ -44,7 +51,6 @@
   &__link {
     @extend %phone-text-size;
     @extend %secondary-button-style;
-
   }
   &__location-title,
   &__location-link,
