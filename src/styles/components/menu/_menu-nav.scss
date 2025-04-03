@@ -1,7 +1,18 @@
 .menu__nav {
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 11px 69px 22px 20px;
 
+  padding: 11px 69px 22px 20px;
+}
+
+.menu__list {
+  width: 100%;
+  text-align: left;
+  list-style: none;
+}
+
+.menu__item {
+  overflow: hidden;
 }
