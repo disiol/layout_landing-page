@@ -3,13 +3,13 @@
   &__contact-toggle {
     margin-left: 24px;
 
-    @include respond-to(md) {
-      margin-left: 144px;
-    }
+    // @include respond-to(md) {
+    //  margin-left: 144px;
+    // }
 
     @include hover-image(
-        '../images/icons/header/icon-phone-call.png',
-        '../images/icons/header/icon-phone-call.png'
+      '../images/icons/header/icon-phone-call.png',
+      '../images/icons/header/icon-phone-call.png'
     );
   }
 
@@ -17,8 +17,8 @@
     margin-left: 24px;
 
     @include hover-image(
-        '../images/icons/header/icon-burger-menu.png',
-        '../images/icons/header/icon-burger-menu-hover.png'
+      '../images/icons/header/icon-burger-menu.png',
+      '../images/icons/header/icon-burger-menu-hover.png'
     );
   }
 }

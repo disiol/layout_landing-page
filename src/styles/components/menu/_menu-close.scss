@@ -1,9 +1,0 @@
-.menu__close {
-  margin-left: 24px;
-
-  @include icon-style;
-  @include hover-image(
-      '../images/icons/menu/icon-close.png',
-      '../images/icons/menu/icon-close.png'
-  );
-}

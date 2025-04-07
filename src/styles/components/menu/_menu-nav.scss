@@ -12,15 +12,14 @@
   @extend %secondary-button-style;
 
   padding: 11px 69px 22px 20px;
-
 }
 
-.menu__nav--list {
+.menu__list {
   width: 100%;
   text-align: left;
   list-style: none;
 }
 
-.menu__nav--list--item {
+.menu__item {
   overflow: hidden;
 }

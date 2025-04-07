@@ -1,8 +1,30 @@
 .menu__header {
   display: flex;
+  gap: 192px;
   align-items: center;
   justify-content: space-between;
 
   width: 100%;
   padding: 25px 20px 0;
+
 }
+
+.menu__ {
+  &logo-link {
+    overflow: visible;
+    padding-left: 40px;
+  }
+
+  &close {
+    padding-right: 20px;
+
+    @include icon-style;
+    @include hover-image(
+        '../images/icons/menu/icon-close.png',
+        '../images/icons/menu/icon-close.png'
+    );
+  }
+
+}
+
+
