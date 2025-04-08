@@ -5,21 +5,21 @@
   justify-content: space-between;
 
   padding: 11px 69px 22px 20px;
-}
 
-.menu__link {
-  @extend %phone-text-size;
-  @extend %secondary-button-style;
+  &-link {
+    @extend %phone-text-size;
+    @extend %secondary-button-style;
 
-  padding: 11px 69px 22px 20px;
-}
+    padding: 11px 69px 22px 20px;
+  }
 
-.menu__list {
-  width: 100%;
-  text-align: left;
-  list-style: none;
-}
+  &-list {
+    width: 100%;
+    text-align: left;
+    list-style: none;
+  }
 
-.menu__item {
-  overflow: hidden;
+  &-item {
+    overflow: hidden;
+  }
 }
