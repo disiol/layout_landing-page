@@ -4,22 +4,23 @@
   align-items: center;
   justify-content: space-between;
 
-  padding: 11px 69px 22px 20px;
+  &-item {
+    overflow: hidden;
+    text-align: left;
+    padding-bottom: 32px;
+  }
 
   &-link {
-    @extend %phone-text-size;
+    font-size: 22px;
+
     @extend %secondary-button-style;
 
-    padding: 11px 69px 22px 20px;
   }
 
   &-list {
-    width: 100%;
     text-align: left;
     list-style: none;
   }
 
-  &-item {
-    overflow: hidden;
-  }
+
 }
