@@ -1,6 +1,11 @@
-.menu__location-title,
-.menu__location-link,
-.menu__phone {
-  @extend %secondary-button-style;
-  @extend %phone-text-size;
+.menu__contacts {
+
+  &-location-title,
+  &-location-link,
+  &-phone {
+    font-size: 16px;
+    @extend %contacts-phone-and-location-text-size;
+    @extend %secondary-button-style;
+
+  }
 }
