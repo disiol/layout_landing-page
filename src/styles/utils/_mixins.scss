@@ -25,7 +25,7 @@
 
 // Стиль для заголовка
 @mixin header-style {
-  position: absolute;
+  position: relative;
 
   width: variables.$header-width;
   height: variables.$header-height;
