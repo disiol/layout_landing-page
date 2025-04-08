@@ -28,7 +28,7 @@
   &__location-link,
   &__phone {
     @extend %secondary-button-style;
-    @extend %phone-text-size;
+    @extend %contacts-phone-and-location-text-size;
 
   }
 

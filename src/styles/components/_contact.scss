@@ -6,7 +6,7 @@
   }
 
   &__phone {
-    @extend %phone-text-size;
+    @extend %contacts-phone-and-location-text-size;
   }
 
   &__text {
