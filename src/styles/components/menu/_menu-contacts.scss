@@ -1,11 +1,14 @@
 .menu__contacts {
-
+  padding-bottom: 31px;
+  &-location {
+    padding-bottom: 16px;
+  }
   &-location-title,
   &-location-link,
+  &-call-to-order,
   &-phone {
     font-size: 16px;
     @extend %contacts-phone-and-location-text-size;
     @extend %secondary-button-style;
-
   }
 }
