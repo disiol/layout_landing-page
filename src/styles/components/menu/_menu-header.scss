@@ -7,15 +7,13 @@
   width: 100%;
   padding: 25px 20px 0;
 
-}
 
-.menu__ {
-  &logo-link {
+  &-logo-link {
     overflow: visible;
     padding-left: 40px;
   }
 
-  &close {
+  &-close {
     padding-right: 20px;
 
     @include icon-style;
