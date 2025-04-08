@@ -29,8 +29,7 @@ p,
 
   overflow-y: hidden; /* Вимикає горизонтальну прокрутку */
   display: grid;
-  grid-template-columns: 2fr; // Одноколонковий макет за замовчуванням
-  grid-template-rows: auto 1fr auto; // Визначає висоту заголовка, основного контенту і підвалу
+  grid-template-columns: repeat(2, 1fr);
   gap: $grid-gap;
 
   @include respond-to('tablet') {
