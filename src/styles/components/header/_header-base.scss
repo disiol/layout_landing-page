@@ -1,7 +1,5 @@
 /* _header-base.scss */
 .header {
-  grid-column: 1 / -1;
-
   @include header-style;
 
   &__nav {

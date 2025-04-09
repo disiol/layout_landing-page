@@ -43,7 +43,6 @@
 // Стиль для заголовка
 @mixin header-style {
   position: relative;
-
   width: $header-width;
   height: $header-height;
   padding: 25px 20px 0;
@@ -52,6 +51,8 @@
 
   background: $header-background-image no-repeat center center;
   background-size: cover;
+
+  @extend %element-occupies-all-columns;
 }
 
 // Універсальний стиль для іконок

@@ -1,5 +1,4 @@
 // TODO
-.footer{
-  grid-column: 1 / -1;
-
+.footer {
+  @extend %element-occupies-all-columns;
 }

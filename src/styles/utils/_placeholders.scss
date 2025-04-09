@@ -27,7 +27,6 @@
 
 // Placeholder for buttons
 %primary-button-style {
-
   @extend %cursor;
 
   cursor: pointer;
@@ -66,9 +65,7 @@
   letter-spacing: 2px;
   vertical-align: middle;
 
-
   &:hover {
-
     @extend %cursor;
 
     text-decoration: #fff underline;
@@ -92,4 +89,8 @@
 // Cursor style as a separate placeholder
 %cursor {
   cursor: url('../images/icons/cursor-mouse-mice.png'), auto;
+}
+
+%element-occupies-all-columns {
+  grid-column: 1 / -1;
 }
