@@ -15,28 +15,13 @@ li,
 img,
 p,
 .main {
-  overflow-x: hidden; /* Вимикає горизонтальну прокрутку */
-
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-  font-family: Cinzel, sans-serif;
 }
 
-.body {
-  scroll-behavior: smooth; /* Додає плавний ефект при прокрутці */
-
-  overflow-y: hidden; /* Вимикає горизонтальну прокрутку */
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: $grid-gap;
-
-  @include respond-to('tablet') {
-    // TODO
-  }
-
-  @include respond-to('desktop') {
-    // TODO
-  }
+.body{
+  font-family: Cinzel, sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden; // ← тільки горизонтальну прибираємо
 }
