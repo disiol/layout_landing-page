@@ -1,5 +1,4 @@
 // utils/_mixins.scss
-@use 'sass:map';
 
 // Гнучкий міксин для grid
 @mixin grid-layout($columns, $row-gap: 10px, $column-gap: 10px) {
