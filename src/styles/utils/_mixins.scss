@@ -1,5 +1,5 @@
-@use "sass:map";
-@use "variables";
+// utils/_mixins.scss
+@use 'sass:map';
 
 // Гнучкий міксин для grid
 @mixin grid-layout($columns, $row-gap: 10px, $column-gap: 10px) {
@@ -8,16 +8,34 @@
   gap: $row-gap $column-gap;
 }
 
+@mixin responsive-grid {
+  @include grid-layout(2, $grid-gap, $grid-gap);
+
+  @include respond-to('tablet') {
+    @include grid-layout(6, $grid-gap, $grid-gap);
+  }
+
+  @include respond-to('desktop') {
+    @include grid-layout(12, $grid-gap, $grid-gap);
+  }
+}
+
+@mixin col-span($cols) {
+  grid-column: span $cols;
+}
+
 // Адаптивність
 @mixin respond-to($breakpoint) {
-  $breakpoints: (
-    'phone': 320px,
-    'tablet': 774px,
-    'desktop': 1260px,
-  );
-
-  @if map.has-key($breakpoints, $breakpoint) {
-    @media (min-width: map.get($breakpoints, $breakpoint)) {
+  @if $breakpoint == 'mobile' {
+    @media (max-width: 768px) {
+      @content;
+    }
+  } @else if $breakpoint == 'tablet' {
+    @media (min-width: 769px) and (max-width: 1024px) {
+      @content;
+    }
+  } @else if $breakpoint == 'desktop' {
+    @media (min-width: 1025px) {
       @content;
     }
   }
@@ -27,13 +45,13 @@
 @mixin header-style {
   position: relative;
 
-  width: variables.$header-width;
-  height: variables.$header-height;
+  width: $header-width;
+  height: $header-height;
   padding: 25px 20px 0;
 
   color: white;
 
-  background: variables.$header-background-image no-repeat center center;
+  background: $header-background-image no-repeat center center;
   background-size: cover;
 }
 
@@ -41,22 +59,22 @@
 @mixin icon-style {
   @extend %cursor;
 
-  width: variables.$icons-size;
-  height: variables.$icons-size;
+  width: $icons-size;
+  height: $icons-size;
 }
 
 // Міксин для заміни зображення при наведенні
 @mixin hover-image($default, $hover, $transition-speed: 0.3s) {
-  width: variables.$icons-size;
-  height: variables.$icons-size;
+  width: $icons-size;
+  height: $icons-size;
 
   background: url($default) no-repeat center center;
-  background-size: variables.$icons-size, variables.$icons-size;
+  background-size: $icons-size, $icons-size;
 
   transition: background $transition-speed ease;
 
   &:hover {
     background: url($hover) no-repeat center center;
-    background-size: variables.$icons-size, variables.$icons-size;
+    background-size: $icons-size, $icons-size;
   }
 }
