@@ -1,4 +1,12 @@
 // utils/placeholders.scss
+
+// Placeholder for clearing reset styles
+%reset-element {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 %section-title {
   font-size: $section--text-title-size;
   font-weight: 700;
@@ -17,6 +25,9 @@
   letter-spacing: 0;
   vertical-align: middle;
 }
+
+
+
 
 // Placeholder for general text
 %general-text {

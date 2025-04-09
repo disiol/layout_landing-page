@@ -15,13 +15,15 @@ li,
 img,
 p,
 .main {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  @extend %reset-element;
 }
 
-.body{
-  font-family: Cinzel, sans-serif;
+.main {
+  @include responsive-grid;
+}
+
+.body {
   scroll-behavior: smooth;
   overflow-x: hidden; // ← тільки горизонтальну прибираємо
+  font-family: Cinzel, sans-serif;
 }
