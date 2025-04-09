@@ -224,36 +224,37 @@
           <h3 class="hours__title-mini">Plan your visit</h3>
           <h2 class="hours__title-big">Museum Hours</h2>
         </div>
+
         <div class="hours__schedule">
           <a
-            class="hours__schedule-title"
+            class="hours__schedule-location"
             href="https://www.google.com/maps?q=The+Met+Cloisters"
             target="_blank"
             rel="noopener noreferrer"
           >
             The Met Fifth Avenue
           </a>
-          <div class="hours__schedule-day-and-time">
-            <section class="hours__schedule-day-and-time--time">
-              10 AM - 5 PM
-            </section>
-            <section class="hours__schedule-day-and-time--day">
-              Sun, Mon, Tue, Thu
-            </section>
-            <section class="hours__schedule-day-and-time--time">
-              10 AM - 9 PM
-            </section>
-            <section class="hours__schedule-day-and-time--day">
-              Fri, Sat
-            </section>
 
-            <section class="hours__schedule-day-and-time--closed">
-              Closed — Wed
-            </section>
+          <ul class="hours__list">
+            <li class="hours__item">
+              <span class="hours__time">10 AM – 5 PM</span>
+              <span class="hours__days">Sun, Mon, Tue, Thu</span>
+            </li>
+            <li class="hours__item">
+              <span class="hours__time">10 AM – 9 PM</span>
+              <span class="hours__days">Fri, Sat</span>
+            </li>
+            <li class="hours__item hours__item--closed">
+              <span class="hours__label">Closed</span>
+              <span class="hours__days">Wed</span>
+            </li>
+          </ul>
 
-            <section class="hours__schedule-day-and-time--holidays">
-              Closed — Wed
-            </section>
+          <div class="hours__holidays">
+            <h4 class="hours__holidays-title">Closed on</h4>
+            <p class="hours__holidays-text">
+              Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.
+            </p>
           </div>
         </div>
       </section>
