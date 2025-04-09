@@ -7,8 +7,9 @@
   &-location-link,
   &-call-to-order,
   &-phone {
-    font-size: 16px;
     @extend %contacts-phone-and-location-text-size;
     @extend %secondary-button-style;
+
+    font-size: 16px;
   }
 }

@@ -1,5 +1,25 @@
 // TODO
-.hours{
-  grid-column: 1 / -1;
+.hours {
+  @extend %element-occupies-all-columns;
 
+  position: relative;
+  width: 100%;
+
+  &__title {
+    &-mini {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 140%;
+      color: #d12d35;
+      letter-spacing: 0;
+    }
+
+    &-big {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 32px;
+      color: #161616;
+      letter-spacing: -1.5px;
+    }
+  }
 }
