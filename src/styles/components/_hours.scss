@@ -9,7 +9,6 @@
 
   &__title {
     padding-bottom: 32px;
-
     &-mini {
       font-size: 12px;
       font-weight: 700;
@@ -25,5 +24,27 @@
       color: #161616;
       letter-spacing: -1.5px;
     }
+  }
+  &__schedule {
+    &-location {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      color: #161616;
+      text-decoration: none;
+      letter-spacing: 0;
+    }
+    &-location:hover {
+      @extend %cursor;
+
+      text-decoration: #0c0c0c underline;
+    }
+    &-location::after {
+      text-decoration: none;
+    }
+  }
+  &__list {
+    padding-top: 16px;
+    list-style: none;
   }
 }
