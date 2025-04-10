@@ -62,4 +62,10 @@
 
     padding-top: 8px;
   }
+  &__time {
+    @extend %small-text-16px-blood;
+  }
+  &__days {
+    @extend %small-text-16px-italic;
+  }
 }
