@@ -1,0 +1,397 @@
+html, a, h1, h2, h3, h4, h5, h6, body, header, nav, ul, li, img, p, .main {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.museum-info__title, .contact__title, .header__title {
+  text-align: center;
+  letter-spacing: -1.5px;
+  vertical-align: middle;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.museum-info__phone, .contact__phone, .menu__contacts-location-title, .menu__contacts-location-link, .menu__contacts-call-to-order, .menu__contacts-phone, .header__location-title, .header__location-link, .header__phone {
+  text-transform: uppercase;
+  letter-spacing: 0;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.contact__text {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.hours__holidays-title, .hours__time {
+  letter-spacing: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.hours__holidays-text, .hours__days {
+  letter-spacing: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.contact__button {
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  background-color: #b00000;
+  border: none;
+  padding: .8rem 1.5rem;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+  transition: background .3s;
+}
+
+.contact__button:after {
+  background-color: #eb343d;
+}
+
+.contact__button:hover {
+  background-color: #900000;
+}
+
+.menu__contacts-location-title, .menu__contacts-location-link, .menu__contacts-call-to-order, .menu__contacts-phone, .menu__nav-link, .header__location-title, .header__location-link, .header__phone {
+  color: #fff;
+  text-underline-offset: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-decoration: none;
+}
+
+.menu__contacts-location-title:hover, .menu__contacts-location-link:hover, .menu__contacts-call-to-order:hover, .menu__contacts-phone:hover, .menu__nav-link:hover, .header__location-title:hover, .header__location-link:hover, .header__phone:hover {
+  text-decoration: underline #fff;
+}
+
+.hours__schedule-location:hover, .menu__header-close, .header__icon-style, .contact__button, .menu__contacts-location-title:hover, .menu__contacts-location-link:hover, .menu__contacts-call-to-order:hover, .menu__contacts-phone:hover, .menu__nav-link:hover, .header__location-title:hover, .header__location-link:hover, .header__phone:hover {
+  cursor: url("cursor-mouse-mice.5d1b0b3f.png"), auto;
+}
+
+.footer, .hours, .header {
+  grid-column: 1 / -1;
+}
+
+.main {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  display: grid;
+}
+
+@media (width >= 769px) and (width <= 1024px) {
+  .main {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    display: grid;
+  }
+}
+
+@media (width >= 1025px) {
+  .main {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    display: grid;
+  }
+}
+
+.body {
+  scroll-behavior: smooth;
+  min-width: 320px;
+  font-family: Cinzel, serif;
+  overflow-x: hidden;
+}
+
+.header {
+  color: #fff;
+  background: url("image-heder-beac.72703411.png") center / cover no-repeat;
+  width: 100%;
+  height: 568px;
+  padding: 25px 20px 0;
+  position: relative;
+}
+
+.header__nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 200px;
+  display: flex;
+}
+
+.header__icon-style {
+  width: 24px;
+  height: 24px;
+}
+
+.header__controls {
+  align-items: center;
+  display: flex;
+}
+
+.header__title {
+  width: 280px;
+  height: 80px;
+  padding-bottom: 338px;
+  overflow: hidden;
+}
+
+.header__contacts {
+  z-index: 10;
+  text-align: right;
+  width: 201px;
+  height: 116px;
+  padding-top: 50px;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: absolute;
+}
+
+.header__contacts--show {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.header__contacts--hidden {
+  display: none;
+}
+
+.header__location-title {
+  padding-top: 8px;
+}
+
+.header__contact-toggle {
+  background-color: #0000;
+  background-image: url("icon-phone-call.9ef8beb4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px, 24px;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
+  transition: background .3s;
+}
+
+.header__contact-toggle:hover {
+  background-color: #0000;
+  background-image: url("icon-phone-call.9ef8beb4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px, 24px;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+
+.header__menu-toggle {
+  background-color: #0000;
+  background-image: url("icon-burger-menu.e5454288.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px, 24px;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
+  transition: background .3s;
+}
+
+.header__menu-toggle:hover {
+  background-color: #0000;
+  background-image: url("icon-burger-menu-hover.d0060330.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px, 24px;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+
+.menu {
+  z-index: 1000;
+  color: #fff;
+  opacity: 0;
+  background: #b00000;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out, visibility .3s;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  transform: translateX(100%);
+}
+
+.menu--open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu__header {
+  justify-content: space-between;
+  align-items: center;
+  gap: 192px;
+  width: 100%;
+  padding: 25px 20px 0;
+  display: flex;
+}
+
+.menu__header-logo-link {
+  padding-left: 40px;
+  overflow: visible;
+}
+
+.menu__header-close {
+  background-color: #0000;
+  background-image: url("icon-close.4acf12c7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px, 24px;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+  width: 24px;
+  height: 24px;
+  padding-right: 20px;
+  transition: background .3s;
+}
+
+.menu__header-close:hover {
+  background-color: #0000;
+  background-image: url("icon-close.4acf12c7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px, 24px;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
+}
+
+.menu__nav {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.menu__nav-item {
+  text-align: left;
+  padding-bottom: 32px;
+  overflow: hidden;
+}
+
+.menu__nav-link {
+  font-size: 22px;
+}
+
+.menu__nav-list {
+  text-align: left;
+  list-style: none;
+}
+
+.menu__contacts {
+  padding-bottom: 31px;
+}
+
+.menu__contacts-location {
+  padding-bottom: 16px;
+}
+
+.menu__contacts-location-title, .menu__contacts-location-link, .menu__contacts-call-to-order, .menu__contacts-phone {
+  font-size: 16px;
+}
+
+.exhibitions {
+  grid-column: 1 / -1;
+}
+
+.hours {
+  width: 100%;
+  padding-top: 100px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.hours__title {
+  padding-bottom: 32px;
+}
+
+.hours__title-mini {
+  color: #d12d35;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.hours__title-big {
+  color: #161616;
+  letter-spacing: -1.5px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.hours__schedule-location {
+  color: #161616;
+  letter-spacing: 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration: none;
+}
+
+.hours__schedule-location:hover {
+  text-decoration: underline #0c0c0c;
+}
+
+.hours__schedule-location:after {
+  text-decoration: none;
+}
+
+.hours__list {
+  padding-top: 16px;
+  list-style: none;
+}
+
+.hours__item {
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-top: 8px;
+  display: inline-flex;
+}
+
+.hours__holidays {
+  padding-top: 16px;
+}
+
+.contact, .museum-info {
+  grid-column: 1 / -1;
+}
+/*# sourceMappingURL=layout_landing-page.971c2ea4.css.map */
