@@ -1,21 +1,26 @@
 // utils/_mixins.scss
 
 // Гнучкий міксин для grid
-@mixin grid-layout($columns, $row-gap: 10px, $column-gap: 10px) {
+@mixin grid-layout(
+  $columns,
+  $column-gap: 20px,
+  $place-items: normal
+) {
   display: grid;
   grid-template-columns: repeat($columns, 1fr);
-  gap: $row-gap $column-gap;
+  column-gap:  $column-gap;
+  place-items: $place-items;
 }
 
-@mixin responsive-grid {
-  @include grid-layout(2, $grid-gap, $grid-gap);
+@mixin responsive-grid($place-items: normal) {
+  @include grid-layout(2, $grid-gap, $place-items);
 
   @include respond-to('tablet') {
-    @include grid-layout(6, $grid-gap, $grid-gap);
+    @include grid-layout(6, $grid-gap,  $place-items);
   }
 
   @include respond-to('desktop') {
-    @include grid-layout(12, $grid-gap, $grid-gap);
+    @include grid-layout(12, $grid-gap, $place-items);
   }
 }
 
