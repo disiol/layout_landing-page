@@ -23,7 +23,8 @@ p,
 }
 
 .body {
+  min-width: 320px;
   scroll-behavior: smooth;
   overflow-x: hidden; // ← тільки горизонтальну прибираємо
-  font-family: Cinzel, sans-serif;
+  font-family: Cinzel,serif;
 }
