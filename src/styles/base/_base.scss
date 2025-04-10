@@ -18,13 +18,14 @@ p,
   @extend %reset-element;
 }
 
-.main {
-  @include responsive-grid;
-}
-
 .body {
   min-width: 320px;
   scroll-behavior: smooth;
   overflow-x: hidden; // ← тільки горизонтальну прибираємо
-  font-family: Cinzel,serif;
+  font-family: Cinzel, serif;
+}
+
+.main{
+  padding-left: 20px;
+  padding-right: 20px;
 }
