@@ -31,6 +31,7 @@
 
   &__schedule {
     grid-column: 1 / -1;
+    padding-bottom: 24px;
 
     &-location {
       font-size: 24px;
@@ -66,18 +67,22 @@
   &__item {
     padding-top: 8px;
   }
+
   &__time {
     @extend %small-text-16px-blood;
   }
+
   &__days {
     @extend %small-text-16px-italic;
   }
+
   &__holidays {
     padding-top: 16px;
 
     &-title {
       @extend %small-text-16px-blood;
     }
+
     &-text {
       @extend %small-text-16px-italic;
     }
