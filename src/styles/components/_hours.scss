@@ -1,14 +1,15 @@
 // components/_hours.scss
 
 .hours {
-  @extend %element-occupies-all-columns;
-
+  margin: 0;
   position: relative;
   width: 100%;
   padding-top: 100px;
   padding-left: 20px;
+  @include responsive-grid;
 
   &__title {
+    grid-column: 1 / -1;
     padding-bottom: 32px;
 
     &-mini {
@@ -29,6 +30,8 @@
   }
 
   &__schedule {
+    grid-column: 1 / -1;
+
     &-location {
       font-size: 24px;
       font-weight: 700;
@@ -49,17 +52,18 @@
     }
   }
 
-  &__list {
+  &__box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 24px;
+    width: 275px;
+    margin: 8px 0 0;
+
     padding-top: 16px;
-    list-style: none;
   }
 
   &__item {
-    display: inline-flex;
-    gap: 24px;
-    align-items: center;
-    justify-content: space-between;
-
     padding-top: 8px;
   }
   &__time {
