@@ -26,7 +26,15 @@
   vertical-align: middle;
 }
 
-// Placeholders text
+
+
+
+// Placeholder for  text
+%general-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
 %small-text-16px-blood {
   font-weight: 700;
   font-size: 16px;
@@ -40,6 +48,7 @@
   line-height: 27px;
   letter-spacing: 0;
 }
+
 
 // Placeholder for buttons
 %primary-button-style {
