@@ -68,4 +68,14 @@
   &__days {
     @extend %small-text-16px-italic;
   }
+  &__holidays {
+    padding-top: 16px;
+
+    &-title {
+      @extend %small-text-16px-blood;
+    }
+    &-text {
+      @extend %small-text-16px-italic;
+    }
+  }
 }
