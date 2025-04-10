@@ -1,4 +1,5 @@
-// TODO
+// components/_hours.scss
+
 .hours {
   @extend %element-occupies-all-columns;
 
@@ -9,6 +10,7 @@
 
   &__title {
     padding-bottom: 32px;
+
     &-mini {
       font-size: 12px;
       font-weight: 700;
@@ -25,6 +27,7 @@
       letter-spacing: -1.5px;
     }
   }
+
   &__schedule {
     &-location {
       font-size: 24px;
@@ -34,17 +37,29 @@
       text-decoration: none;
       letter-spacing: 0;
     }
+
     &-location:hover {
       @extend %cursor;
 
       text-decoration: #0c0c0c underline;
     }
+
     &-location::after {
       text-decoration: none;
     }
   }
+
   &__list {
     padding-top: 16px;
     list-style: none;
+  }
+
+  &__item {
+    display: inline-flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 8px;
   }
 }
