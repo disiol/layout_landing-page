@@ -1,12 +1,18 @@
 // main.css
+
+// Utilities
 @import 'utils/variables';
 @import 'utils/placeholders';
 @import 'utils/mixins';
+
+// Base Styles
 @import 'base/base';
+
+// Component Styles
 @import 'components/header/main-header';
 @import 'components/menu/main-menu';
-@import 'components/museum-info';
-@import 'components/hours';
 @import 'components/exhibitions';
+@import 'components/hours';
 @import 'components/contact';
+@import 'components/museum-info';
 @import 'components/footer';
