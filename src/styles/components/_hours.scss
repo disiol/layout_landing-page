@@ -21,11 +21,7 @@
     }
 
     &-big {
-      font-size: 32px;
-      font-weight: 700;
-      line-height: 32px;
-      color: #161616;
-      letter-spacing: -1.5px;
+      @extend %title-text-style;
     }
   }
 

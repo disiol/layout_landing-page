@@ -1,5 +1,11 @@
 // TODO
-.exhibitions{
+.now-on-view {
   grid-column: 1 / -1;
+  &__title-blood {
+    @extend %title-text-style;
+  }
 
+  &__title-italic {
+    @extend %small-text-16px-italic;
+  }
 }

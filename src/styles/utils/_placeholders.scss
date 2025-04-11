@@ -26,9 +26,6 @@
   vertical-align: middle;
 }
 
-
-
-
 // Placeholder for  text
 %general-text {
   font-size: 1rem;
@@ -48,7 +45,13 @@
   line-height: 27px;
   letter-spacing: 0;
 }
-
+%title-text-style {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #161616;
+  letter-spacing: -1.5px;
+}
 
 // Placeholder for buttons
 %primary-button-style {
