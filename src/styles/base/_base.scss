@@ -7,8 +7,8 @@ h3,
 h4,
 h5,
 h6,
-body,
-header,
+.body,
+.header,
 nav,
 ul,
 li,
@@ -19,13 +19,13 @@ p,
 }
 
 .body {
-  min-width: 320px;
   scroll-behavior: smooth;
   overflow-x: hidden; // ← тільки горизонтальну прибираємо
+  min-width: 320px;
   font-family: Cinzel, serif;
 }
 
-.main{
-  padding-left: 20px;
+.main {
   padding-right: 20px;
+  padding-left: 20px;
 }

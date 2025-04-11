@@ -29,11 +29,9 @@
   &__phone {
     @extend %secondary-button-style;
     @extend %contacts-phone-and-location-text-size;
-
   }
 
   &__location-title {
     padding-top: 8px;
   }
 }
-

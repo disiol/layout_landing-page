@@ -7,7 +7,6 @@
   width: 100%;
   padding: 25px 20px 0;
 
-
   &-logo-link {
     overflow: visible;
     padding-left: 40px;
@@ -18,11 +17,8 @@
 
     @include icon-style;
     @include hover-image(
-        '../images/icons/menu/icon-close.png',
-        '../images/icons/menu/icon-close.png'
+      '../images/icons/menu/icon-close.png',
+      '../images/icons/menu/icon-close.png'
     );
   }
-
 }
-
-

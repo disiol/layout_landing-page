@@ -1,11 +1,20 @@
 // TODO
 .now-on-view {
-  grid-column: 1 / -1;
+  margin: 0;
+  padding-top: 100px;
   &__title-blood {
     @extend %title-text-style;
+
+    padding-bottom: 8px;
+    text-align: center;
   }
 
   &__title-italic {
     @extend %small-text-16px-italic;
+
+    text-align: center;
+  }
+  &__wrapper {
+    @include responsive-grid;
   }
 }

@@ -11,17 +11,13 @@
   }
 
   &-link {
-
     @extend %secondary-button-style;
 
     font-size: 22px;
-
   }
 
   &-list {
     text-align: left;
     list-style: none;
   }
-
-
 }

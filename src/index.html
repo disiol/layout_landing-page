@@ -11,10 +11,13 @@
     />
     <title>The Met</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;400italic;700italic&display=swap"
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="icon"
       href="images/icons/header/logo-the-met.png"
@@ -33,8 +36,8 @@
     <header class="header">
       <nav class="header__nav">
         <a
-          href="/"
           class="header__logo-link"
+          href="/"
         >
           <img
             class="header__logo"
@@ -45,7 +48,7 @@
 
         <div
           class="header__contacts header__contacts--hidden"
-          id="header__contacts"
+          id="header-contacts"
         >
           <div class="header__location">
             <h2 class="header__location-title">
@@ -88,16 +91,16 @@
 
         <div class="header__controls">
           <a
-            class="header__contact-toggle header__icon-style"
+            class="header__contact-toggle header__icon"
             id="contacts-toggle"
             aria-label="Show contacts"
             aria-expanded="false"
-            aria-controls="header__contact"
+            aria-controls="header-contacts"
             href="tel:+12125357710"
           ></a>
           <div
-            class="header__menu-toggle header__icon-style"
-            id="header__menu-toggle"
+            class="header__menu-toggle header__icon"
+            id="menu-toggle"
             aria-label="Open menu"
             aria-expanded="false"
             aria-controls="menu"
@@ -111,63 +114,63 @@
       class="menu"
       id="menu"
     >
-      <section class="menu__header">
+      <div class="menu__header">
         <a
           href="/"
-          class="menu__header-logo-link"
+          class="menu__logo-link"
         >
           <img
-            class="menu__header-logo"
+            class="menu__logo"
             src="images/icons/header/logo-the-met.png"
             alt="The Met Logo"
           />
         </a>
         <div
-          class="menu__header-close"
+          class="menu__close"
           id="menu-close"
           role="button"
           aria-label="Close menu"
         ></div>
-      </section>
+      </div>
 
       <nav class="menu__nav">
-        <ul class="menu__nav-list">
-          <li class="menu__nav-item">
+        <ul class="menu__list">
+          <li class="menu__item">
             <a
               href="#"
-              class="menu__nav-link"
+              class="menu__link"
             >
               Home
             </a>
           </li>
-          <li class="menu__nav-item">
+          <li class="menu__item">
             <a
               href="#hours"
-              class="menu__nav-link"
+              class="menu__link"
             >
               About Us
             </a>
           </li>
-          <li class="menu__nav-item">
+          <li class="menu__item">
             <a
               href="#now-on-view"
-              class="menu__nav-link"
+              class="menu__link"
             >
               Now on View
             </a>
           </li>
-          <li class="menu__nav-item">
+          <li class="menu__item">
             <a
               href="#explore-online"
-              class="menu__nav-link"
+              class="menu__link"
             >
               Explore Online
             </a>
           </li>
-          <li class="menu__nav-item">
+          <li class="menu__item">
             <a
               href="#contacts"
-              class="menu__nav-link"
+              class="menu__link"
             >
               Contacts
             </a>
@@ -175,12 +178,12 @@
         </ul>
       </nav>
 
-      <section class="menu__contacts">
-        <div class="menu__contacts-location">
-          <h2 class="menu__contacts-location-title">
+      <div class="menu__contacts">
+        <div class="menu__location">
+          <h2 class="menu__location-title">
             <a
               href="https://www.google.com/maps?q=The+Met+Fifth+Avenue"
-              class="menu__contacts-location-link"
+              class="menu__location-link"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -189,16 +192,16 @@
           </h2>
           <a
             href="tel:+12125357710"
-            class="menu__contacts-phone"
+            class="menu__phone"
           >
             +1 212-535-7710
           </a>
         </div>
 
-        <div class="menu__contacts-location">
-          <h2 class="menu__contacts-location-title">
+        <div class="menu__location">
+          <h2 class="menu__location-title">
             <a
-              class="menu__contacts-location-link"
+              class="menu__location-link"
               href="https://www.google.com/maps?q=The+Met+Cloisters"
               target="_blank"
               rel="noopener noreferrer"
@@ -208,19 +211,19 @@
           </h2>
           <a
             href="tel:+12129233700"
-            class="menu__contacts-phone"
+            class="menu__phone"
           >
             +1 212-923-3700
           </a>
         </div>
 
         <a
-          class="menu__contacts-call-to-order"
+          class="menu__call-to-action"
           href="tel:+12125357710"
         >
           Call to order
         </a>
-      </section>
+      </div>
     </aside>
 
     <main class="main">
@@ -228,14 +231,14 @@
         id="hours"
         class="hours"
       >
-        <div class="hours__title">
-          <h3 class="hours__title-mini">Plan your visit</h3>
-          <h2 class="hours__title-big">Museum Hours</h2>
+        <div class="hours__header">
+          <h3 class="hours__subtitle">Plan your visit</h3>
+          <h2 class="hours__title">Museum Hours</h2>
         </div>
 
-        <div class="hours__schedule">
+        <div class="hours__location">
           <a
-            class="hours__schedule-location"
+            class="hours__location-link"
             href="https://surl.li/tpxvgb"
             target="_blank"
             rel="noopener noreferrer"
@@ -243,29 +246,29 @@
             The Met Fifth Avenue
           </a>
 
-          <div class="hours__box">
-            <div class="hours__time">
-              <span>10 AM – 5 PM</span>
-              <span>10 AM – 9 PM</span>
-              <span>Closed</span>
+          <div class="hours__schedule">
+            <div class="hours__times">
+              <span class="hours__time">10 AM – 5 PM</span>
+              <span class="hours__time">10 AM – 9 PM</span>
+              <span class="hours__time">Closed</span>
             </div>
-            <div class="hours__days">
-              <span>Sun, Mon, Tue, Thu</span>
-              <span>Fri, Sat</span>
-              <span>Wed</span>
+            <div class="hours__days-group">
+              <span class="hours__days">Sun, Mon, Tue, Thu</span>
+              <span class="hours__days">Fri, Sat</span>
+              <span class="hours__days">Wed</span>
             </div>
           </div>
 
-          <div class="hours__holidays">
-            <h4 class="hours__holidays-title">Closed on</h4>
-            <p class="hours__holidays-text">
+          <div class="hours__closure">
+            <h4 class="hours__closure-title">Closed on</h4>
+            <p class="hours__closure-text">
               Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.
             </p>
           </div>
         </div>
-        <div class="hours__schedule">
+        <div class="hours__location">
           <a
-            class="hours__schedule-location"
+            class="hours__location-link"
             href="https://surl.li/tylvpi"
             target="_blank"
             rel="noopener noreferrer"
@@ -273,139 +276,142 @@
             The Met Cloisters
           </a>
 
-          <div class="hours__box">
-            <div class="hours__time">
-              <span>10 am – 4.30 pm</span>
-              <span>Closed</span>
+          <div class="hours__schedule">
+            <div class="hours__times">
+              <span class="hours__time">10 am – 4.30 pm</span>
+              <span class="hours__time">Closed</span>
             </div>
-            <div class="hours__days">
-              <span>Thu - Tue</span>
-              <span>Wed</span>
+            <div class="hours__days-group">
+              <span class="hours__days">Thu - Tue</span>
+              <span class="hours__days">Wed</span>
             </div>
           </div>
 
-          <div class="hours__holidays">
-            <h4 class="hours__holidays-title">Closed on</h4>
-            <p class="hours__holidays-text">Thanksgiving Day, Dec 25, Jan 1</p>
+          <div class="hours__closure">
+            <h4 class="hours__closure-title">Closed on</h4>
+            <p class="hours__closure-text">Thanksgiving Day, Dec 25, Jan 1</p>
           </div>
         </div>
       </section>
 
       <section
-        class="now-on-view"
+        class="exhibitions"
         id="now-on-view"
       >
-        <h2 class="now-on-view__title-blood">Now On View</h2>
-        <p class="now-on-view__title-italic">
+        <h2 class="exhibitions__title">Now On View</h2>
+        <p class="exhibitions__subtitle">
           Explore exhibition gallery guides, videos, articles, and more.
         </p>
-        <div class="now-on-view__wrapper">
-          <article class="view">
-            <div class="view__photos__box">
+        <div class="exhibitions__list">
+          <article class="exhibition">
+            <div class="exhibition__gallery">
               <a
                 href="#"
-                class="view__link view__link--wide"
+                class="exhibition__link exhibition__link--wide"
               >
                 <img
-                  class="view__photo"
+                  class="exhibition__image"
                   src="images/now-on-view/a-new-look-at-old-masters/a-new-look-at-old-masters--wide.png"
                   alt="A New Look at Old Masters"
                 />
               </a>
               <a
                 href="#"
-                class="view__link view__link--square"
+                class="exhibition__link exhibition__link--square"
               >
                 <img
-                  class="view__photo"
+                  class="exhibition__image"
                   src="images/now-on-view/a-new-look-at-old-masters/a-new-look-at-old-masters--square.png"
                   alt="A New Look at Old Masters"
                 />
               </a>
             </div>
-            <h3 class="view__title-red">A New Look at Old Masters</h3>
-            <p class="view__title">December 12, 2020 – Through Spring 2023</p>
+            <h3 class="exhibition__name">A New Look at Old Masters</h3>
+            <p class="exhibition__dates">
+              December 12, 2020 – Through Spring 2023
+            </p>
           </article>
-          <article>
-            <div class="view__photos view__photos__box">
+
+          <article class="exhibition">
+            <div class="exhibition__gallery">
               <a
                 href="#"
-                class="view__link view__link--square"
+                class="exhibition__link exhibition__link--square"
               >
                 <img
-                  class="view__photo view__photo__box"
+                  class="exhibition__image"
                   src="./images/now-on-view/bodhisattvas-of-wisdom-compassion-and-power--square/bodhisattvas-of-wisdom-compassion-and-power--square.png"
                   alt="Bodhisattvas of Wisdom, Compassion, and Power"
                 />
               </a>
               <a
                 href="#"
-                class="view__link view__link--square"
+                class="exhibition__link exhibition__link--square"
               >
                 <img
-                  class="view__photo view__photo__box"
+                  class="exhibition__image"
                   src="./images/now-on-view/bodhisattvas-of-wisdom-compassion-and-power--square/bodhisattvas-of-wisdom-compassion-and-power2--square.png"
                   alt="Bodhisattvas of Wisdom, Compassion, and Power"
                 />
               </a>
               <a
                 href="#"
-                class="view__link view__link--square"
+                class="exhibition__link exhibition__link--square"
               >
                 <img
-                  class="view__photo view__photo__box"
+                  class="exhibition__image"
                   src="./images/now-on-view/bodhisattvas-of-wisdom-compassion-and-power--square/bodhisattvas-of-wisdom-compassion-and-power3--square.png"
                   alt="Bodhisattvas of Wisdom, Compassion, and Power"
                 />
               </a>
             </div>
-            <h3 class="view__title-red">
+            <h3 class="exhibition__name">
               Bodhisattvas of Wisdom, Compassion, and Power
             </h3>
-            <p class="view__title">March 27, 2021 – October 30, 2022</p>
+            <p class="exhibition__dates">March 27, 2021 – October 30, 2022</p>
           </article>
-          <article>
-            <div class="view__photos">
+
+          <article class="exhibition">
+            <div class="exhibition__gallery">
               <a
                 href="#"
-                class="view__link view__link--square"
+                class="exhibition__link exhibition__link--square"
               >
                 <img
-                  class="view__photo"
+                  class="exhibition__image"
                   src="images/now-on-view/inspiring-walt-disney/inspiring-walt-disney--wide.png"
-                  alt="Inspiring Walt Disney:
-                  The Animation of French Decorative Arts"
+                  alt="Inspiring Walt Disney: The Animation of French Decorative Arts"
                 />
               </a>
               <a
                 href="#"
-                class="view__link view__link--wide"
+                class="exhibition__link exhibition__link--wide"
               >
                 <img
-                  class="view__photo view__photo--photo-7"
+                  class="exhibition__image"
                   src="./images/now-on-view/inspiring-walt-disney/inspiring-walt-disney--wide.png"
-                  alt="Inspiring Walt Disney:
-                  The Animation of French Decorative Arts"
+                  alt="Inspiring Walt Disney: The Animation of French Decorative Arts"
                 />
               </a>
             </div>
-            <h3 class="view__title-red">
+            <h3 class="exhibition__name">
               Inspiring Walt Disney: The Animation of French Decorative Arts
             </h3>
-            <p class="view__title">December 10, 2021 – March 6, 2022</p>
+            <p class="exhibition__dates">December 10, 2021 – March 6, 2022</p>
           </article>
         </div>
-        <div class="view__block">
-          <p class="view__title-block">View all exhibitions</p>
+        <div class="exhibitions__footer">
+          <p class="exhibitions__view-all">View all exhibitions</p>
         </div>
       </section>
+
       <section
         id="explore-online"
         class="explore"
       >
         <h2 class="explore__title">Explore Online</h2>
-        <p>
-          Discover the Met’s vast collections and exhibitions from the comfort
+        <p class="explore__description">
+          Discover the Met's vast collections and exhibitions from the comfort
           of your home.
         </p>
       </section>

@@ -1,11 +1,13 @@
 // components/_hours.scss
 
 .hours {
-  margin: 0;
   position: relative;
+
   width: 100%;
+  margin: 0;
   padding-top: 100px;
   padding-left: 20px;
+
   @include responsive-grid;
 
   &__title {
@@ -51,12 +53,12 @@
 
   &__box {
     display: flex;
-    justify-content: flex-start;
-    align-items: start;
     gap: 24px;
+    align-items: start;
+    justify-content: flex-start;
+
     width: 275px;
     margin: 8px 0 0;
-
     padding-top: 16px;
   }
 

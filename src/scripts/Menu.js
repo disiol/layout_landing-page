@@ -5,7 +5,7 @@
 export default class Menu {
   constructor() {
     // DOM елементи
-    this.menuToggle = document.getElementById('header__menu-toggle');
+    this.menuToggle = document.getElementById('menu-toggle');
     this.menu = document.getElementById('menu');
     this.menuClose = document.getElementById('menu-close');
     this.menuLinks = document.querySelectorAll('.menu__link');

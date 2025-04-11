@@ -7,7 +7,7 @@ export default class Contacts {
   constructor() {
     // DOM елементи
     this.contactsToggle = document.getElementById('contacts-toggle');
-    this.headerContacts = document.getElementById('header__contacts');
+    this.headerContacts = document.getElementById('header-contacts');
 
     // Стан контактів
     this.isVisible = !this.headerContacts.classList.contains(
