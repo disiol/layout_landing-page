@@ -57,7 +57,7 @@ Follow the instructions in this and next lessons to implement the page block by 
       - `_base.scss`
     - `components/`
       - `_contact.scss`
-      - `_exhibitions.scss`
+      - `_now-on-view.scss`
       - `_footer.scss`
       - `header/`
         - `_header-base.scss`
