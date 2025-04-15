@@ -1,18 +1,14 @@
-/* _header-contacts.scss */
-.header {
+.site-header {
   &__contacts {
     position: absolute;
     z-index: 10;
 
     width: 201px;
     height: 116px;
-    padding-top: 50px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding: 50px 16px 0;
 
     text-align: right;
 
-    // Initially hidden
     &--show {
       display: flex;
       align-items: center;
@@ -24,14 +20,16 @@
     }
   }
 
-  &__location-title,
+  &__location-title {
+    @extend %secondary-button-style;
+    @extend %contacts-phone-and-location-text-size;
+
+    padding-top: 8px;
+  }
+
   &__location-link,
   &__phone {
     @extend %secondary-button-style;
     @extend %contacts-phone-and-location-text-size;
-  }
-
-  &__location-title {
-    padding-top: 8px;
   }
 }

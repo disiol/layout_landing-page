@@ -1,5 +1,4 @@
-/* _header-base.scss */
-.header {
+.site-header {
   @include header-style;
 
   &__nav {
@@ -9,13 +8,13 @@
     margin-bottom: 200px;
   }
 
-  &__icon {
-    @include icon-style;
-  }
-
   &__controls {
     display: flex;
     align-items: center;
+  }
+
+  &__icon {
+    @include icon-style;
   }
 
   &__title {

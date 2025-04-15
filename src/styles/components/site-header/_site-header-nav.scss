@@ -1,0 +1,19 @@
+.site-header {
+  &__contact-toggle {
+    margin-left: 24px;
+
+    @include hover-image(
+        '../images/icons/header/icon-phone-call.png',
+        '../images/icons/header/icon-phone-call.png'
+    );
+  }
+
+  &__menu-toggle {
+    margin-left: 24px;
+
+    @include hover-image(
+        '../images/icons/header/icon-burger-menu.png',
+        '../images/icons/header/icon-burger-menu-hover.png'
+    );
+  }
+}

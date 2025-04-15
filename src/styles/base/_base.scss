@@ -7,8 +7,8 @@ h3,
 h4,
 h5,
 h6,
-.body,
-.header,
+.page-body,
+.site-header,
 nav,
 ul,
 li,
@@ -18,7 +18,7 @@ p,
   @extend %reset-element;
 }
 
-.body {
+.page-body {
   scroll-behavior: smooth;
   overflow-x: hidden; // ← тільки горизонтальну прибираємо
   min-width: 320px;
